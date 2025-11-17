@@ -1,0 +1,42 @@
+name: Fetch NOFOs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fetch-nofos:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create .env file
+        run: |
+          echo "GRANTS_GOV_API_KEY=${{ secrets.GRANTS_GOV_API_KEY }}" > .env
+
+      - name: Fetch Opportunity IDs
+        run: node src/opportunityIds.js
+
+      - name: Fetch Opportunity Details
+        run: node src/opportunityDetails.js
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "autonofo@grantwell.com"
+          git config --local user.name "GrantHarvester"
+          git add data/
+          git commit -m "Update NOFO data [skip ci]" || exit 0
+          git push origin main

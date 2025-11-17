@@ -1,0 +1,25 @@
+{
+  "name": "grant-harvester",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anuttan",
+  "license": "ISC",
+  "description": "GrantHarvester is a lightweight tool that automates the daily ingestion of federal funding opportunities (NOFOs) from [Simpler.Grants.gov](https://simpler.grants.gov).",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anuttan/GrantHarvester.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Anuttan/GrantHarvester/issues"
+  },
+  "homepage": "https://github.com/Anuttan/GrantHarvester#readme"
+}

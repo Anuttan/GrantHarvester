@@ -1,0 +1,36 @@
+{
+  "total_opportunities_processed": 782,
+  "mime_type_counts": {
+    "text/html": 387,
+    "application/pdf": 85,
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 22,
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": 13,
+    "application/octet-stream": 8,
+    "application/x-zip-compressed": 3,
+    "application/msword": 2,
+    "application/zip": 1
+  },
+  "attachment_count_distribution": {
+    "0": 298,
+    "1": 420,
+    "2": 14,
+    "3": 6,
+    "4": 8,
+    "5": 7,
+    "6": 3,
+    "7": 8,
+    "8": 1,
+    "9": 1,
+    "10": 2,
+    "11": 3,
+    "13": 2,
+    "14": 2,
+    "15": 2,
+    "17": 1,
+    "19": 1,
+    "37": 1,
+    "38": 1,
+    "46": 1
+  },
+  "generated_at": "2025-11-17T03:25:17.881Z"
+}
