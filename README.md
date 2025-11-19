@@ -1,6 +1,12 @@
 # GrantHarvester
 
-GrantHarvester is a lightweight tool that automates the ingestion of federal funding opportunities (NOFOs) document from [Simpler.Grants.gov](https://simpler.grants.gov).
+GrantHarvester is a lightweight tool that automates the ingestion of Massachusetts state grant opportunities.
+It scrapes publicly available data from:
+
+- Mass.gov Community Grant Finder
+- MA agency grant pages (MassDevelopment, DOER, DESE, AGO, etc.)
+
+The goal is to create a single, structured source of truth for all Massachusetts state-funded grant programs.
 
 ## Project Structure
 
